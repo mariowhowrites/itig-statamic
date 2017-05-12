@@ -2,6 +2,6 @@
  * Created by mario on 5/11/17.
  */
 
-const mix = require('laravel-mix').mix;
+let mix = require('laravel-mix');
 
-mix.js('js/core/app.js', '/js/app.js');
+mix.js('core/js/itig.js', 'js');
