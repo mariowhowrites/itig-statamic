@@ -1,0 +1,26 @@
+title: Distributions
+hide: true
+fields:
+  title:
+    type: title
+    display: State
+  euip:
+    type: text
+    display: Estimated Undocumented Immigrant Population
+    validate: integer
+  percentage:
+    type: text
+    display: Percentage
+    validate: digits_between:0,3
+  ir_allocation:
+    type: text
+    display: IR Allocation
+    validate: integer
+  infrastructure_allocation:
+    type: text
+    display: Infrastructure Allocation
+    validate: integer
+  total_state_allocation:
+    type: text
+    display: Total State Allocation
+    validate: integer

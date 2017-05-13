@@ -1,0 +1,3 @@
+order: title
+fields: distributions
+template: blog/post
