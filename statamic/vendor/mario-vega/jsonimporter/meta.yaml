@@ -1,0 +1,6 @@
+name: JSONImporter
+version: "1.0"
+description: Takes a structured JSON and turns it into a Statamic site hierarchy
+url: ceibaweb.com
+developer: Mario Vega
+developer_url: ceibaweb.com

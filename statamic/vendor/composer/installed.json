@@ -3816,5 +3816,21 @@
             "lucene",
             "zf2"
         ]
+    },
+    {
+        "name": "mario-vega/jsonimporter",
+        "version": "dev-distributions",
+        "version_normalized": "dev-distributions",
+        "dist": {
+            "type": "path",
+            "url": "../site/addons/JSONImporter",
+            "reference": "d188e4848a46bd76b209d2b664fd4c86bfef7509",
+            "shasum": null
+        },
+        "type": "library",
+        "installation-source": "dist",
+        "transport-options": {
+            "symlink": false
+        }
     }
 ]

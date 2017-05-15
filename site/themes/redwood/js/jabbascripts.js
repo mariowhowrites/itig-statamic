@@ -4,6 +4,8 @@ $(function() {
 	$('article.content img').attr('data-action', 'zoom');
 
 	// Make captions from Alt tags
+
+
 	$('img.captioned').each(function() {
 		var caption = $(this).attr('alt') || false;
 		if (caption) {

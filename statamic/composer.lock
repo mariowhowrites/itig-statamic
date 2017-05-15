@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "50cefd67dafeb078aa30a8e37b6c8383",
-    "content-hash": "df77c468f7187da8b2db64247b546f97",
+    "hash": "ca71c101eee495dcf38a68fc3543b6ab",
+    "content-hash": "c5921e9351a09fd1f10fdfb6c6d8a3ba",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -1502,6 +1502,20 @@
                 "twitter"
             ],
             "time": "2016-08-17 00:36:58"
+        },
+        {
+            "name": "mario-vega/jsonimporter",
+            "version": "dev-distributions",
+            "dist": {
+                "type": "path",
+                "url": "../site/addons/JSONImporter",
+                "reference": "d188e4848a46bd76b209d2b664fd4c86bfef7509",
+                "shasum": null
+            },
+            "type": "library",
+            "transport-options": {
+                "symlink": false
+            }
         },
         {
             "name": "maximebf/debugbar",
@@ -3847,12 +3861,12 @@
             "version": "0.9.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/padraic/mockery.git",
+                "url": "https://github.com/mockery/mockery.git",
                 "reference": "4db079511a283e5aba1b3c2fb19037c645e70fc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/padraic/mockery/zipball/4db079511a283e5aba1b3c2fb19037c645e70fc2",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/4db079511a283e5aba1b3c2fb19037c645e70fc2",
                 "reference": "4db079511a283e5aba1b3c2fb19037c645e70fc2",
                 "shasum": ""
             },
@@ -5275,7 +5289,8 @@
         "michelf/php-smartypants": 20,
         "netcarver/textile": 20,
         "mmanos/laravel-search": 20,
-        "zendframework/zendsearch": 20
+        "zendframework/zendsearch": 20,
+        "mario-vega/jsonimporter": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
