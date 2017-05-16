@@ -76,9 +76,9 @@ class CloudFrontClient extends AwsClient
      * - expires: (int) UTC Unix timestamp used when signing with a canned
      *   policy. Not required when passing a custom 'policy' option.
      * - key_pair_id: (string) The ID of the key pair used to sign CloudFront
-     *   URLs for private distributions.
+     *   URLs for private distributions.html.
      * - private_key: (string) The filepath ot the private key used to sign
-     *   CloudFront URLs for private distributions.
+     *   CloudFront URLs for private distributions.html.
      *
      * @param array $options Array of configuration options used when signing
      *
@@ -119,9 +119,9 @@ class CloudFrontClient extends AwsClient
      * - expires: (int) UTC Unix timestamp used when signing with a canned
      *   policy. Not required when passing a custom 'policy' option.
      * - key_pair_id: (string) The ID of the key pair used to sign CloudFront
-     *   URLs for private distributions.
+     *   URLs for private distributions.html.
      * - private_key: (string) The filepath ot the private key used to sign
-     *   CloudFront URLs for private distributions.
+     *   CloudFront URLs for private distributions.html.
      *
      * @param array $options Array of configuration options used when signing
      *

@@ -13,3 +13,5 @@ routes:
   /register: auth/register
   /forgot-password: auth/password-forgot
   /reset-password: auth/password-reset
+  /resources/state-distributions: dist
+  /: home
