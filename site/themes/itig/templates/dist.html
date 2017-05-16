@@ -1,0 +1,20 @@
+<table>
+    <tr>
+        <th>State</th>
+        <th>EUIP</th>
+        <th>Percentage</th>
+        <th>IR Allocation</th>
+        <th>Infrastructure Allocation</th>
+        <th>Total State Allocaton</th>
+    </tr>
+    {{ collection:distributions }}
+    <tr>
+        <td>{{ title }}</td>
+        <td>{{ euip }}</td>
+        <td>{{ percentage }}</td>
+        <td>{{ ir_allocation }}</td>
+        <td>{{ infrastructure_allocation }}</td>
+        <td>{{ total_state_allocation }}</td>
+    </tr>
+    {{ /collection:distributions }}
+</table>
