@@ -1,6 +1,12 @@
 <div class="container">
     <main class="main col-xs-10">
-        <nav></nav>
+        {{ nav from="/" max_depth="2" }}
+            <ul>
+                <li>
+                    {{ title }}
+                </li>
+            </ul>
+        {{ /nav }}
         <img src=""/>
     </main>
     <aside class="sidebar col-xs-2">
