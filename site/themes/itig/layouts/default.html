@@ -3,20 +3,33 @@
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" <![endif]-->
 <!--[if IE 8]><html class="no-js lt-ie9" <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-
-
-
 {{ partial:default_head }}
 
-{{ nav from="/" }}
-
-<body>
-    <div class="container">
-        {{ template_content }}
+<header class="header-bar container">
+    <div class="level">
+        <div class="level-left">
+            <div class="level-item site-logo">
+                {{ assets path="assets" }}
+                <img src="{{ url }}" alt="{{ alt }}" />
+                {{ /assets }}
+            </div>
+            <div class="level-item site-title">
+                <h3 class="title is-3 tk-omnes-pro">{{ site_name | upper }}</h3>
+            </div>
+        </div>
+        <div class="level-right social-media-icons">
+            <p class="level-item">Social</p>
+            <p class="level-item">Media</p>
+            <p class="level-item">Here</p>
+        </div>
     </div>
+</header>
+<body>
+
+<section class="main-content section">
+    {{ template_content }}
+</section>
 
 {{ partial:footer_scripts }}
-
 </body>
-
 </html>

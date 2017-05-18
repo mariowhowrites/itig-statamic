@@ -1,23 +1,31 @@
+<!-- Homepage section. Consists of nav-picture Vue element (main) and topical sidebar (aside) -->
 <div class="container">
-    <main class="main col-xs-10">
-        {{ nav from="/" max_depth="2" }}
-            <ul>
-                <li>
-                    {{ title }}
-                </li>
-            </ul>
-        {{ /nav }}
-        <img src=""/>
-    </main>
-    <aside class="sidebar col-xs-2">
-        <div class="sidebar-wrapper">
-            <h3>Action</h3>
-            <ul>
-                <li>Immigrants</li>
-                <li>Citizens</li>
-                <li>Tax Policy</li>
-                <li>Press</li>
-            </ul>
-        </div>
-    </aside>
+    <div class="columns homepage-section">
+        <!-- Main content. Will eventually consist of a supernav, but for now it'll just be a nav and a featured image-->
+        <main class="column is-three-quarters left-content" style="background-color: red">
+            <div id="main-content" class="column is-three-quarters">
+                <nav class="nav">
+                    <div class="nav-left">
+                        {{ nav from="/" max_depth="2" }}
+                            {{ title }}
+                        {{ /nav }}
+                    </div>
+                </nav>
+                <img src=""/>
+            </div>
+        </main>
+        <!-- Aside. Should consist of [X] number of cards, each with a title and a short description of contents -->
+        <aside class="column sidebar container" style="background-color: blue;">
+            <div class="columns">
+                <div class="sidebar-card-wrapper column is-half is-offset-one-quarter">
+                    <ul>
+                        <li>Immigrants</li>
+                        <li>Citizens</li>
+                        <li>Tax Policy</li>
+                        <li>Press</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </div>
 </div>
