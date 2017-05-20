@@ -1,31 +1,47 @@
 <!-- Homepage section. Consists of nav-picture Vue element (main) and topical sidebar (aside) -->
-<div class="container">
-    <div class="columns homepage-section">
-        <!-- Main content. Will eventually consist of a supernav, but for now it'll just be a nav and a featured image-->
-        <main class="column is-three-quarters left-content" style="background-color: red">
-            <div id="main-content" class="column is-three-quarters">
-                <nav class="nav">
-                    <div class="nav-left">
-                        {{ nav from="/" max_depth="2" }}
-                            {{ title }}
-                        {{ /nav }}
+<div class="columns homepage-section is-full section">
+    <!-- Featured content. Will eventually consist of a supernav, but for now it'll just be a nav and a featured image-->
+    <main class="column is-8 left-content">
+        <div id="main-content" class="is-full">
+            <nav class="nav hero-nav">
+                <div class="nav-center">
+                    {{ nav from="/" max_depth="2" }}
+                    <a href="{{ url }}" class="nav-item hero-nav-item tk-europa">{{ title | upper }}</a>
+                    {{ /nav }}
+                </div>
+            </nav>
+            {{ collection:blog limit=1 }}
+                <img src="{{ hero_image }}"/>
+            {{ /collection:blog }}
+        </div>
+    </main>
+    <!-- Aside. Should consist of [X] number of cards, each with a title and a short description of contents -->
+    <aside class="column right-sidebar container">
+        <div class="sidebar-card-wrapper columns">
+            <div class="sidebar-card column is-full">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-header-title">Tax Policy</h3>
                     </div>
-                </nav>
-                <img src=""/>
-            </div>
-        </main>
-        <!-- Aside. Should consist of [X] number of cards, each with a title and a short description of contents -->
-        <aside class="column sidebar container" style="background-color: blue;">
-            <div class="columns">
-                <div class="sidebar-card-wrapper column is-half is-offset-one-quarter">
-                    <ul>
-                        <li>Immigrants</li>
-                        <li>Citizens</li>
-                        <li>Tax Policy</li>
-                        <li>Press</li>
-                    </ul>
+                    <div class="card-content"><p>Analyze Immigrant Tax Inquiry Group's innovative approach to tax policy.</p></div>
                 </div>
             </div>
-        </aside>
-    </div>
+            <div class="sidebar-card column is-full">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-header-title">Tax Policy</h3>
+                    </div>
+                    <div class="card-content"><p>Analyze Immigrant Tax Inquiry Group's innovative approach to tax policy.</p></div>
+                </div>
+            </div>
+            <div class="sidebar-card column is-full">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-header-title">Tax Policy</h3>
+                    </div>
+                    <div class="card-content"><p>Analyze Immigrant Tax Inquiry Group's innovative approach to tax policy.</p></div>
+                </div>
+            </div>
+        </div>
+    </aside>
 </div>

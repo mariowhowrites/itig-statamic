@@ -1,7 +1,53 @@
-.header-bar, .sidebar-wrapper {
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.itig-header {
+  background: #3C3B6E;
+  min-height: 160px;
+  color: white;
+  padding: 2rem;
+  .site-title-wrap {
+    max-width: 50%;
+    margin: 0 auto;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10rem;
+      top: 130%;
+      line-height:10px;
+      border-bottom: 2px solid #B22234;
+    }
+    .site-title {
+      text-align: center;
+      color: white;
+      font-weight: 700;
+    }
+  }
+}
+
+.top-margin {
   margin-top: 1.5rem;
 }
 
-.top-section {
+/* descriptive, not architectural. ie: not used in sidebar*/
+.side-padding {
   padding: 0 2rem;
+}
+
+.hero-nav {
+  background: #B22234;
+  .hero-nav-item {
+    margin: 0 3%;
+    color: white;
+  }
+}
+
+/* Homepage Card Sidebar */
+
+.sidebar-card-wrapper {
+  display: flex;
+  flex-direction: column;
 }
