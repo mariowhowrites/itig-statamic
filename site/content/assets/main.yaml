@@ -2,7 +2,6 @@ title: Main Assets
 path: assets
 url: /assets
 assets:
-  itig-logo.png:
+  site_img/itig-logo.png:
     title: itig-logo
     alt: This is some alt text to display stuff
-

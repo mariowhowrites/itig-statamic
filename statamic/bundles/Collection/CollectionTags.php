@@ -315,6 +315,7 @@ class CollectionTags extends Tags
 
                 $data = array_merge($data, $this->getCollectionMetaData());
 
+
                 return $this->parse($data);
 
             } else {

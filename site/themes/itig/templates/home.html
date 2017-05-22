@@ -1,5 +1,5 @@
-<!-- Homepage section. Consists of nav-picture Vue element (main) and topical sidebar (aside) -->
-<div class="columns homepage-section is-full section">
+<!-- Homepage hero section. Consists of nav-picture Vue element (main) and topical sidebar (aside) -->
+<div class="homepage-hero-section columns is-full section">
     <!-- Featured content. Will eventually consist of a supernav, but for now it'll just be a nav and a featured image-->
     <main class="column is-8 left-content">
         <div id="main-content" class="is-full">
@@ -11,7 +11,7 @@
                 </div>
             </nav>
             {{ collection:blog limit=1 }}
-                <img src="{{ hero_image }}"/>
+            <img src="{{ hero_image }}"/>
             {{ /collection:blog }}
         </div>
     </main>
@@ -45,3 +45,21 @@
         </div>
     </aside>
 </div>
+<!-- Content section. Four cards below homepage hero section, with images and links to relevant content. -->
+
+<div class="featured-pages columns is-multiline is-full section">
+    {{ relate:homepage_global:featured_pages }}
+    <div class="sidebar-card column is-half">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-header-title">{{ title }}</h3>
+            </div>
+            <div class="card-content">
+                <p>Analyze Immigrant Tax Inquiry Group's innovative approach to tax policy.</p>
+            </div>
+        </div>
+    </div>
+    {{ /relate:homepage_global:featured_pages }}
+
+</div>
+

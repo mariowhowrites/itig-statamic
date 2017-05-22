@@ -1,0 +1,10 @@
+title: Homepage Globals
+hide: true
+fields:
+  featured_pages:
+    type: pages
+    display: Featured Pages
+    instructions: Choose the pages to appear on the front page. Please choose pages with good hero images.
+    max_items: 4
+    depth: 1
+    mode: panes
