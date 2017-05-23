@@ -1,6 +1,65 @@
-<div class="container">
-    <h1>{{ title }}</h1>
-    <hr/>
-    {{ content }}
+<!-- Homepage hero section. Consists of nav-picture Vue element (main) and topical sidebar (aside) -->
+<div class="homepage-hero-section columns is-full section">
+    <!-- Featured content. Will eventually consist of a supernav, but for now it'll just be a nav and a featured image-->
+    <main class="column is-8 left-content">
+        <div id="main-content" class="is-full">
+            <nav class="nav hero-nav container-fluid">
+                <div class="nav-center">
+                    {{ nav from="/" max_depth="2" }}
+                    <a href="{{ url }}" class="nav-item hero-nav-item tk-europa">{{ title | upper }}</a>
+                    {{ /nav }}
+                </div>
+            </nav>
+            {{ collection:blog limit=1 }}
+            <img src="{{ hero_image }}"/>
+            {{ /collection:blog }}
+        </div>
+    </main>
+    <!-- Aside. Should consist of [X] number of cards, each with a title and a short description of contents -->
+    <aside class="column right-sidebar container">
+        <div class="sidebar-card-wrapper columns">
+            <div class="sidebar-card column is-full">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-header-title">Tax Policy</h3>
+                    </div>
+                    <div class="card-content"><p>Analyze Immigrant Tax Inquiry Group's innovative approach to tax policy.</p></div>
+                </div>
+            </div>
+            <div class="sidebar-card column is-full">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-header-title">Tax Policy</h3>
+                    </div>
+                    <div class="card-content"><p>Analyze Immigrant Tax Inquiry Group's innovative approach to tax policy.</p></div>
+                </div>
+            </div>
+            <div class="sidebar-card column is-full">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-header-title">Tax Policy</h3>
+                    </div>
+                    <div class="card-content"><p>Analyze Immigrant Tax Inquiry Group's innovative approach to tax policy.</p></div>
+                </div>
+            </div>
+        </div>
+    </aside>
+</div>
+<!-- Content section. Four cards below homepage hero section, with images and links to relevant content. -->
+
+<div class="featured-pages columns is-multiline is-full section">
+    {{ relate:homepage_global:featured_pages }}
+    <div class="sidebar-card column is-half">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-header-title">{{ title }}</h3>
+            </div>
+            <div class="card-content">
+                <p>Analyze Immigrant Tax Inquiry Group's innovative approach to tax policy.</p>
+            </div>
+        </div>
+    </div>
+    {{ /relate:homepage_global:featured_pages }}
+
 </div>
 

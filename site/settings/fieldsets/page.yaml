@@ -1,0 +1,11 @@
+title: Page
+fields:
+  content:
+    type: markdown
+    display: The content
+    localizable: true
+  featured-image:
+    type: assets
+    container: page-images
+    display: Featured Image
+    max_files: 1

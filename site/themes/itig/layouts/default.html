@@ -3,20 +3,37 @@
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" <![endif]-->
 <!--[if IE 8]><html class="no-js lt-ie9" <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-
-
-
 {{ partial:default_head }}
 
-{{ nav from="/" }}
-
-<body>
-    <div class="container">
-        {{ template_content }}
+<header class="top-margin container itig-header">
+    <div class="level">
+        <div class="level-left">
+            <div class="site-logo level-item">
+                {{ assets path="assets" folder="site_img" }}
+                <a href="/">
+                    <img src="{{ url }}" alt="{{ alt }}"/>
+                </a>
+                {{ /assets }}
+            </div>
+        </div>
+        <div class="level-center">
+            <div class="site-title-wrap level-item">
+                <h3 class="site-title title is-3 is-two-thirds-mobile tk-europa">{{ site_name | upper }}</h3>
+            </div>
+        </div>
+        <div class="level-right social-media-icons">
+            <p class="level-item">About</p>
+            <p class="level-item">Plan</p>
+            <p class="level-item">Contact</p>
+        </div>
     </div>
+</header>
+<body>
+
+<section class="main-content container">
+    {{ template_content }}
+</section>
 
 {{ partial:footer_scripts }}
-
 </body>
-
 </html>

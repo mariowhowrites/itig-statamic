@@ -44,6 +44,7 @@ class PagesTags extends CollectionTags
      */
     private function getPage()
     {
+
         if ($id = $this->get(['id', 'from_id'])) {
             return Page::find($id);
         }
