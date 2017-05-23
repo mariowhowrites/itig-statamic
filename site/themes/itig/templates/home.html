@@ -18,29 +18,37 @@
     <!-- Aside. Should consist of [X] number of cards, each with a title and a short description of contents -->
     <aside class="column right-sidebar container">
         <div class="sidebar-card-wrapper columns">
-            <div class="sidebar-card column is-full">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-header-title">Tax Policy</h3>
+            <div class="hero-form column is-full">
+                {{ form:create in="ac-hero" }}
+                    {{ if errors }}
+                        <div class="alert alert-danger">
+                            {{ errors }}
+                                {{ value }}<br>
+                            {{ /errors }}
+                        </div>
+                    {{ /if }}
+                    {{ if success }}
+                        <div class="alert alert-success">
+                            Got it! Welcome to the family.
+                        </div>
+                    {{ /if }}
+
+                    <div class="form-group field">
+                        <p class="control">
+                            <label for="first_name" class="label">First Name</label>
+                            <input type="text" name="first_name" id="first_name" class="input">
+                        </p>
+                        <p class="control">
+                            <label for="last_name" class="label">Last Name</label>
+                            <input type="text" name="last_name" id="last_name" class="input">
+                        </p>
+                        <p class="text">
+                            <label for="email" class="label">Email</label>
+                            <input type="email" name="email" id="email" class="input">
+                        </p>
                     </div>
-                    <div class="card-content"><p>Analyze Immigrant Tax Inquiry Group's innovative approach to tax policy.</p></div>
-                </div>
-            </div>
-            <div class="sidebar-card column is-full">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-header-title">Tax Policy</h3>
-                    </div>
-                    <div class="card-content"><p>Analyze Immigrant Tax Inquiry Group's innovative approach to tax policy.</p></div>
-                </div>
-            </div>
-            <div class="sidebar-card column is-full">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-header-title">Tax Policy</h3>
-                    </div>
-                    <div class="card-content"><p>Analyze Immigrant Tax Inquiry Group's innovative approach to tax policy.</p></div>
-                </div>
+                    <button>Submit</button>
+                {{ /form:create }}
             </div>
         </div>
     </aside>
