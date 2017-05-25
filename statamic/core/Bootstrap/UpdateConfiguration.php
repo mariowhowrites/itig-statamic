@@ -153,7 +153,7 @@ class UpdateConfiguration
                 $default = $config = [];
 
                 // Get the default, if there is one
-                if ($this->filesystem->exists($default_path = $addon . '/default.yaml')) {
+                if ($this->filesystem->exists($default_path = $addon . '/settings.yaml')) {
                     $default = $this->parseYAML($default_path);
                 }
 

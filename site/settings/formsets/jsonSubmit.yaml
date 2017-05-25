@@ -1,0 +1,7 @@
+title: Submit JSON
+display: true
+
+fields:
+  name:
+    display: JSON File
+    validate: json

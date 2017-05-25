@@ -57,7 +57,6 @@ class Submission implements SubmissionContract
         if (is_null($form)) {
             return $this->form;
         }
-
         $this->form = $form;
     }
 
