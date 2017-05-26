@@ -18,21 +18,16 @@ class StatamicCampaignListener extends Listener
     public function sendToActiveCampaign(Submission $submission) {
         $ac = new \ActiveCampaign( 'https://itig.api-us1.com', 'a16cd0653ce4eb18e6614a9b8bf61b4b4513aa76f172ff49311896cfb7c32c7ab749a280');
 
-        if ('ac-hero' === $submission->formset()->name() ) {
+        if ( 'ac-hero' === $submission->formset()->name() ) {
             $body = collect( array_keys( $submission->formset()->fields() ) )
                     ->reduce( function($array, $field) use ($submission) {
-                        $array[$field]  = $submission->get($field);
+                        $array[$field] = $submission->get($field);`
                         return $array;
                     }, []);
 
             $body['list_id'] = 'p[3]';
 
-            $body;
-
             $response = $ac->api('contact/sync', $body);
         }
-
-
-
     }
 }
