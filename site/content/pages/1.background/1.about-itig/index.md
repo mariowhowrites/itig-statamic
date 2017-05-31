@@ -1,4 +1,8 @@
 ---
+meta_description: >
+  Find out more about the Immigrant Tax Inquiry Group, and discover why the Third Way immigration
+  policy will pave the way for immigration reform.
+featured_image: page-images::contribution-chart1-1495496355.gif
 title: About ITIG
 id: dd1dffee-0b83-449c-96e2-cb1fa49cc8b0
 ---

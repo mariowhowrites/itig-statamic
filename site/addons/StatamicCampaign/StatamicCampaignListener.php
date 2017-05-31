@@ -21,7 +21,7 @@ class StatamicCampaignListener extends Listener
         if ( 'ac-hero' === $submission->formset()->name() ) {
             $body = collect( array_keys( $submission->formset()->fields() ) )
                     ->reduce( function($array, $field) use ($submission) {
-                        $array[$field] = $submission->get($field);`
+                        $array[$field] = $submission->get($field);
                         return $array;
                     }, []);
 

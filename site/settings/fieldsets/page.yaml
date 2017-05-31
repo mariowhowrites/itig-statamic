@@ -4,7 +4,14 @@ fields:
     type: markdown
     display: The content
     localizable: true
-  featured-image:
+  meta_description:
+    type: textarea
+    display: Meta Description
+    localizable: true
+    instructions: Meta description used for Google and internally. Keep to 159 characters or less.
+    rows: 2
+    validate: between:0,159
+  featured_image:
     type: assets
     container: page-images
     display: Featured Image

@@ -4,6 +4,7 @@ title: The Current Immigration Debate
 id: 081f63d3-a831-4200-b70e-3facb7035009
 ---
 THE PROBLEMS 
+-
 
 The problems today are several. We have an undocumented population the size of some nations, with many being here for decades with families. They cause an unfair financial burden on Americans across many sectors of the economy affecting areas such as education, healthcare, law enforcement, border security and job competition.
 
