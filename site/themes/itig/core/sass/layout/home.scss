@@ -4,22 +4,16 @@
 }
 
 .itig-header {
-  background: #3C3B6E;
   min-height: 160px;
-  color: white;
+  max-width: 100%;
+  width: 100%;
   padding: 2rem;
+  background: #3C3B6E;
+  color: white;
   .site-title-wrap {
     max-width: 50%;
     margin: 0 auto;
     position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      width: 10rem;
-      top: 130%;
-      line-height:10px;
-      border-bottom: 2px solid #B22234;
-    }
     .site-title {
       text-align: center;
       color: white;
@@ -32,7 +26,6 @@
   margin-top: 1.5rem;
 }
 
-/* descriptive, not architectural. ie: not used in sidebar*/
 .side-padding {
   padding: 0 2rem;
 }
@@ -45,6 +38,16 @@
   }
 }
 
+.hero-image-section {
+  min-height: 66vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .hero-text {
+    width: 40%;
+  }
+}
 /* Homepage Card Sidebar */
 
 .sidebar-card-wrapper {

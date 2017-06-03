@@ -1,8 +1,7 @@
 <!-- Homepage hero section. Consists of nav-picture Vue element (main) and topical sidebar (aside) -->
-<div class="homepage-hero-section columns is-full section">
+<div class="homepage-hero-section columns is-full">
     <!-- Featured content. Will eventually consist of a supernav, but for now it'll just be a nav and a featured image-->
-    <main class="column is-8 left-content">
-        <div id="main-content" class="is-full">
+    <main id="main-content" class="column is-full">
             <nav class="nav hero-nav container-fluid">
                 <div class="nav-center">
                     {{ nav from="/" max_depth="2" }}
@@ -10,13 +9,18 @@
                     {{ /nav }}
                 </div>
             </nav>
-            {{ collection:blog limit=1 }}
-            <img src="{{ hero_image }}"/>
-            {{ /collection:blog }}
-        </div>
+
+            <div class="hero-image-section" style="background: url({{ glide :src=homepage_global:hero_image width="1800" height="700" filter="greyscale" }});">
+                <div class="hero-text card">
+                    <div class="card-content">
+                        <p>Hello</p>
+                    </div>
+                </div>
+            </div>
+
     </main>
     <!-- Aside. Should consist of [X] number of cards, each with a title and a short description of contents -->
-    <aside class="column right-sidebar container">
+    <aside class="column right-sidebar">
         <div class="sidebar-card-wrapper columns">
             <div class="hero-form column is-full">
                 {{ form:create in="ac-hero" }}

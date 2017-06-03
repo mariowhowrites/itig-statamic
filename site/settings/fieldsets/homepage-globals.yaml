@@ -8,3 +8,10 @@ fields:
     max_items: 4
     depth: 1
     mode: panes
+  hero_image:
+    type: assets
+    display: Hero Image
+    container: homepage-img
+    instructions: Image to display behind featured text.
+    max_files: 1
+

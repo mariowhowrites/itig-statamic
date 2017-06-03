@@ -1,0 +1,6 @@
+driver: algolia
+algolia_api_key: 9f828dd93d92851279e6a307808d7a1b
+algolia_app_id: FRUHTGHBEE
+auto_index: true
+default_index: default
+algolia_searchable_attributes: [ ]
