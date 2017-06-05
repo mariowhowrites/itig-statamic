@@ -1,0 +1,18 @@
+.itig-header {
+  min-height: 160px;
+  max-width: 100%;
+  width: 100%;
+  padding: 2rem;
+  background: #3C3B6E;
+  color: white;
+  .site-title-wrap {
+    max-width: 50%;
+    margin: 0 auto;
+    position: relative;
+    .site-title {
+      text-align: center;
+      color: white;
+      font-weight: 700;
+    }
+  }
+}

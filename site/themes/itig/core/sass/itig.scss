@@ -1,4 +1,16 @@
+@import "util/semantic";
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$blue: #3C3B6E;
+$red: #B22234;
+
+$primary: $blue;
+
+@import "../../node_modules/bulma/bulma";
 @import "layout/home";
-
-@import "../../node_modules/bulma/css/bulma.css";
-
+@import "layout/header";

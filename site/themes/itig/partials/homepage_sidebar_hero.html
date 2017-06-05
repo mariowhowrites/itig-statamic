@@ -1,0 +1,58 @@
+<div class="homepage-hero-section columns is-full">
+    <!-- Featured content. Will eventually consist of a supernav, but for now it'll just be a nav and a featured image-->
+    <main id="main-content" class="column is-full">
+        <nav class="nav hero-nav container-fluid">
+            <div class="nav-center">
+                {{ nav from="/" max_depth="2" }}
+                <a href="{{ url }}" class="nav-item hero-nav-item tk-europa">{{ title | upper }}</a>
+                {{ /nav }}
+            </div>
+        </nav>
+
+        <div class="hero-image-section" style="background:url('/hello');">
+            <div class="hero-text card">
+                <div class="card-content">
+                    <p>Hello</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- Aside. Should consist of [X] number of cards, each with a title and a short description of contents -->
+    <aside class="column right-sidebar">
+        <div class="sidebar-card-wrapper columns">
+            <div class="hero-form column is-full">
+                {{ form:create in="ac-hero" }}
+                {{ if errors }}
+                <div class="alert alert-danger">
+                    {{ errors }}
+                    {{ value }}<br>
+                    {{ /errors }}
+                </div>
+                {{ /if }}
+                {{ if success }}
+                <div class="alert alert-success">
+                    Got it! Welcome to the family.
+                </div>
+                {{ /if }}
+
+                <div class="form-group field">
+                    <p class="control">
+                        <label for="first_name" class="label">First Name</label>
+                        <input type="text" name="first_name" id="first_name" class="input">
+                    </p>
+                    <p class="control">
+                        <label for="last_name" class="label">Last Name</label>
+                        <input type="text" name="last_name" id="last_name" class="input">
+                    </p>
+                    <p class="text">
+                        <label for="email" class="label">Email</label>
+                        <input type="email" name="email" id="email" class="input">
+                    </p>
+                </div>
+                <button class="button is-primary">Submit</button>
+                {{ /form:create }}
+            </div>
+        </div>
+    </aside>
+</div>

@@ -1,35 +1,16 @@
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* Full-Width Hero */
 
-.itig-header {
-  min-height: 160px;
-  max-width: 100%;
-  width: 100%;
-  padding: 2rem;
-  background: #3C3B6E;
+
+.fullwidth-hero {
+  padding-bottom: .76rem;
   color: white;
-  .site-title-wrap {
-    max-width: 50%;
-    margin: 0 auto;
-    position: relative;
-    .site-title {
-      text-align: center;
-      color: white;
-      font-weight: 700;
-    }
-  }
+}
+.hero-foot .hero-foot-nav-link {
+  color: white;
 }
 
-.top-margin {
-  margin-top: 1.5rem;
-}
 
-.side-padding {
-  padding: 0 2rem;
-}
-
+/* Homepage Sidebar Hero */
 .hero-nav {
   background: #B22234;
   .hero-nav-item {
@@ -48,9 +29,8 @@
     width: 40%;
   }
 }
-/* Homepage Card Sidebar */
-
 .sidebar-card-wrapper {
   display: flex;
   flex-direction: column;
 }
+

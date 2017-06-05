@@ -1,65 +1,37 @@
+
 <!-- Homepage hero section. Consists of nav-picture Vue element (main) and topical sidebar (aside) -->
-<div class="homepage-hero-section columns is-full">
-    <!-- Featured content. Will eventually consist of a supernav, but for now it'll just be a nav and a featured image-->
-    <main id="main-content" class="column is-full">
-            <nav class="nav hero-nav container-fluid">
-                <div class="nav-center">
-                    {{ nav from="/" max_depth="2" }}
-                    <a href="{{ url }}" class="nav-item hero-nav-item tk-europa">{{ title | upper }}</a>
-                    {{ /nav }}
-                </div>
-            </nav>
-
-            <div class="hero-image-section" style="background: url({{ glide :src=homepage_global:hero_image width="1800" height="700" filter="greyscale" }});">
-                <div class="hero-text card">
-                    <div class="card-content">
-                        <p>Hello</p>
-                    </div>
-                </div>
+<section class="fullwidth-hero hero is-medium" style="background: url( {{ theme:img src="background.png" }} );">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="tk-base-mono-narrow" style="font-weight: 700; font-style: italic;">
+                <h1 class="title" style="letter-spacing: 1rem; color:white; font-size: 6rem;">IMMIGRANT TAX</h1>
+                <h1 class="title" style="letter-spacing: .8rem; color:white; font-size: 6rem;">INQUIRY GROUP</h1>
             </div>
-
-    </main>
-    <!-- Aside. Should consist of [X] number of cards, each with a title and a short description of contents -->
-    <aside class="column right-sidebar">
-        <div class="sidebar-card-wrapper columns">
-            <div class="hero-form column is-full">
-                {{ form:create in="ac-hero" }}
-                    {{ if errors }}
-                        <div class="alert alert-danger">
-                            {{ errors }}
-                                {{ value }}<br>
-                            {{ /errors }}
-                        </div>
-                    {{ /if }}
-                    {{ if success }}
-                        <div class="alert alert-success">
-                            Got it! Welcome to the family.
-                        </div>
-                    {{ /if }}
-
-                    <div class="form-group field">
-                        <p class="control">
-                            <label for="first_name" class="label">First Name</label>
-                            <input type="text" name="first_name" id="first_name" class="input">
-                        </p>
-                        <p class="control">
-                            <label for="last_name" class="label">Last Name</label>
-                            <input type="text" name="last_name" id="last_name" class="input">
-                        </p>
-                        <p class="text">
-                            <label for="email" class="label">Email</label>
-                            <input type="email" name="email" id="email" class="input">
-                        </p>
-                    </div>
-                    <button class="button is-primary">Submit</button>
-                {{ /form:create }}
+            <br/>
+            <div class="tk-europa">
+                <h2 class="subtitle" style="color: white;">Just. Equitable. Fiscally sound.</h2>
+                <h2 class="subtitle" style="color: white;">Immigration reform done better.</h2>
             </div>
         </div>
-    </aside>
-</div>
+    </div>
+    <div class="hero-foot">
+        <nav class="tabs is-boxed is-fullwidth">
+            <div class="container tk-base-mono-narrow">
+                <ul>
+                    <li class="is-active"><a>OVERVIEW</a></li>
+                    <li><a class="hero-foot-nav-link">Modifiers</a></li>
+                    <li><a class="hero-foot-nav-link">Grid</a></li>
+                    <li><a class="hero-foot-nav-link">Elements</a></li>
+                    <li><a class="hero-foot-nav-link">Components</a></li>
+                    <li><a class="hero-foot-nav-link">Layout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</section>
 <!-- Content section. Four cards below homepage hero section, with images and links to relevant content. -->
 
-<div class="featured-pages columns is-multiline is-full section">
+<!--<div class="featured-pages columns is-multiline is-full section">
     {{ relate:homepage_global:featured_pages }}
     <div class="sidebar-card column is-half">
         <div class="card">
@@ -73,6 +45,6 @@
     </div>
     {{ /relate:homepage_global:featured_pages }}
 </div>
-
+-->
 {{ partial:pages_cards }}
 
