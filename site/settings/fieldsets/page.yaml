@@ -13,6 +13,7 @@ fields:
     validate: between:0,159
   featured_image:
     type: assets
-    container: page-images
+    container: s3-assets
+    folder: page-images
     display: Featured Image
     max_files: 1

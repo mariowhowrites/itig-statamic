@@ -1,0 +1,37 @@
+taxonomies:
+  tags: true
+title: Press Kit
+create_title: ""
+hide: true
+fields:
+  press_kit_sections:
+    type: replicator
+    display: Press Kit Sections
+    instructions: Create sections to add to the press kit.
+    sets:
+      press_kit_section:
+        display: Press Kit Section
+        instructions: Customize this section with some text, some links, and possibly a graph or two.
+        fields:
+          title:
+            type: title
+            localizable: true
+          description:
+            type: textarea
+            display: Description
+            instructions: Describe the press kit section.
+            validate: string
+          image:
+            type: assets
+            display: Image
+            container: page-images
+            folder: /
+            restrict: true
+            max_files: 1
+          links:
+            type: list
+            display: Links
+            instructions: Include all relevant links, internal and external, here.
+            width: 75
+            validate: url
+    localizable: true

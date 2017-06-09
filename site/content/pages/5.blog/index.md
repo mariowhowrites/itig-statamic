@@ -1,4 +1,5 @@
 ---
+featured_image: page-images::blog.jpg
 title: Blog
 template: top-page
 id: ba99261c-01ee-4028-8a6b-cb63ee5dafbb

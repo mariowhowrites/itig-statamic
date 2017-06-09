@@ -11,6 +11,11 @@ $red: #B22234;
 
 $primary: $blue;
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: base-mono-narrow;
+}
+
 @import "../../node_modules/bulma/bulma";
 @import "layout/home";
 @import "layout/header";
+@import "partials/pages-cards";

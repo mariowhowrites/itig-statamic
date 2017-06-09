@@ -1,0 +1,6 @@
+key: AKIAJBQZS3CCRMTV5HEA
+secret: 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
+bucket: itig-s3
+region: us-west-1
+path: /
+driver: s3

@@ -11,7 +11,13 @@ fields:
   hero_image:
     type: assets
     display: Hero Image
-    container: homepage-img
+    container: s3-assets
+    folder: page-images
     instructions: Image to display behind featured text.
     max_files: 1
-
+  below_fold_text:
+    type: textarea
+    display: Introductory Text -- Below-Fold
+    instructions: The intro text to display below the home page hero section.
+    rows: 3
+    localizable: yes

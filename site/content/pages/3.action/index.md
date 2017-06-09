@@ -1,7 +1,8 @@
 ---
+featured_image: page-images::action.jpg
 title: Action
-id: fff03e6e-c550-42bb-b4c8-6530e17ca4f8
 template: top-page
+id: fff03e6e-c550-42bb-b4c8-6530e17ca4f8
 ---
 > Vision without action is merely a dream. Action without vision just passes the time. Vision with action can change the world.
 

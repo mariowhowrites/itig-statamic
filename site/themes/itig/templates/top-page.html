@@ -1,23 +1,9 @@
-<div class="container content">
-    <hr/>
-    {{ content }}
-</div>
-<div class="columns is-multiline">
-{{ pages }}
-    <div class="column is-half">
-        <div class="card">
-            <div class="card-header">
-                <a href="{{ url }}">
-                    <div class="card-header-title">{{ title }}</div>
-                </a>
-            </div>
-            <div class="card-image">
-                <figure class="image is-square">
-                    <img src="{{ featured_image }}">
-                </figure>
-            </div>
-            <div class="card-content">{{ meta_description or content | safe_truncate:159:... }}</div>
+<section class="section tk-jaf-facitweb">
+    <div class="container content">
+        <div class="has-text-centered">
+            <h1>{{ title|upper }}</h1>
         </div>
+    {{ content }}
     </div>
-{{ /pages }}
-</div>
+</section>
+{{ partial:pages_cards }}

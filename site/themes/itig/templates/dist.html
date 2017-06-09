@@ -1,20 +1,11 @@
-<table class="table is-bordered is-striped container">
-    <tr>
-        <th>State</th>
-        <th>EUIP</th>
-        <th>Percentage</th>
-        <th>IR Allocation</th>
-        <th>Infrastructure Allocation</th>
-        <th>Total State Allocation</th>
-    </tr>
-    {{ collection:distributions }}
-    <tr>
-        <td>{{ title }}</td>
-        <td>{{ euip }}</td>
-        <td>{{ percentage }}</td>
-        <td>{{ ir_allocation }}</td>
-        <td>{{ infrastructure_allocation }}</td>
-        <td>{{ total_state_allocation }}</td>
-    </tr>
-    {{ /collection:distributions }}
-</table>
+{{ section:custom_head_scripts }}
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+{{ /section:custom_head_scripts}}
+
+<div id="app"></div>
+
+{{ section:custom_footer_scripts }}
+    {{ theme:js src="dist" tag="true" cache_bust="true" }}
+{{ /section:custom_footer_scripts }}

@@ -1,9 +1,10 @@
-<header class="itig-header" style="display: none;">
+{{ unless is_home }}
+<header class="itig-header" style="background: #434167;">
     <div class="level">
         <div class="level-left">
             <div class="site-logo level-item">
                 {{ assets path="assets" folder="site_img" }}
-                    <a href="/">
+                    <a href="/" rel="nofollow">
                         <img src="{{ url }}" alt="{{ alt }}"/>
                     </a>
                 {{ /assets }}
@@ -11,7 +12,9 @@
         </div>
         <div class="level-center">
             <div class="site-title-wrap level-item">
-                <h3 class="site-title title is-3 is-two-thirds-mobile tk-europa">{{ site_name | upper }}</h3>
+                <a href="/">
+                    <h3 class="site-title title is-3 is-two-thirds-mobile tk-base-mono-narrow">{{ site_name | upper }}</h3>
+                </a>
             </div>
         </div>
         <div class="level-right social-media-icons">
@@ -21,3 +24,4 @@
         </div>
     </div>
 </header>
+{{ /unless }}

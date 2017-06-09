@@ -1,8 +1,8 @@
 title: Distributions
 hide: true
 fields:
-  title:
-    type: title
+  state:
+    type: text
     display: State
   euip:
     type: text
