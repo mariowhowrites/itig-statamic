@@ -1,14 +1,38 @@
-/* Full-Width Hero */
-
+/* Hero Slider */
 
 .fullwidth-hero {
-  color: white;
-}
-.hero-foot .hero-foot-nav-link {
-  color: white;
+  .hero-head {
+    .nav {
+      box-shadow: none;
+      .nav-right {
+        align-items: center;
+      }
+    }
+  }
+  a {
+    color: white;
+    &:hover {
+      color: $red;
+    }
+  }
 }
 
-/* Homepage Sidebar Hero */
+/* Below-Fold Text Section
+ */
+
+.below-fold {
+  background: $red;
+  .below-fold-image {
+    margin: 0 auto;
+  }
+  .home-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+/* Navigation */
+
 .hero-nav {
   background: #B22234;
   .hero-nav-item {
@@ -16,6 +40,9 @@
     color: white;
   }
 }
+
+/* BELOW CODE NOT CURRENTLY IN USE */
+/* Homepage Sidebar Hero */
 
 .hero-image-section {
   min-height: 66vh;

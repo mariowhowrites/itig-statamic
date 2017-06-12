@@ -31,6 +31,8 @@
         "predis/predis": "^1.1",
         "mario-vega/featuredpages": "*@dev",
         "mario-vega/jsonimporter": "*@dev",
+        "ceiba-web-development/phptovue": "*@dev",
+        "marbles/cookie-consent": "*@dev",
         "ceiba-web-development/statamiccampaign": "*@dev"
     },
     "require-dev": {

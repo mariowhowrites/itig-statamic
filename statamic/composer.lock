@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f3e5b02307f04ef02580011844709326",
-    "content-hash": "0323b8233f584ad11f4ead9131066d4d",
+    "hash": "83a686d9a903d52f027500b8c738f98a",
+    "content-hash": "b99f50bd55e3afe9a5f98d2e805ac285",
     "packages": [
         {
             "name": "activecampaign/api-php",
@@ -233,6 +233,20 @@
                 "webprofiler"
             ],
             "time": "2016-09-15 14:05:56"
+        },
+        {
+            "name": "ceiba-web-development/phptovue",
+            "version": "dev-develop",
+            "dist": {
+                "type": "path",
+                "url": "../site/addons/PHPtoVue",
+                "reference": "328adbd2f5bb976bf9e7d16632afa1f9d031447b",
+                "shasum": null
+            },
+            "type": "library",
+            "transport-options": {
+                "symlink": false
+            }
         },
         {
             "name": "ceiba-web-development/statamiccampaign",
@@ -1561,6 +1575,24 @@
                 "twitter"
             ],
             "time": "2016-08-17 00:36:58"
+        },
+        {
+            "name": "marbles/cookie-consent",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../site/addons/statamic-cookie-consent",
+                "reference": "1d3df31ebd560b5617378c4bf4799b45c047e421",
+                "shasum": null
+            },
+            "type": "library",
+            "license": [
+                "MIT"
+            ],
+            "description": "Make your website comply with the crazy EU cookie law",
+            "transport-options": {
+                "symlink": false
+            }
         },
         {
             "name": "mario-vega/featuredpages",
@@ -5365,6 +5397,8 @@
         "zendframework/zendsearch": 20,
         "mario-vega/featuredpages": 20,
         "mario-vega/jsonimporter": 20,
+        "ceiba-web-development/phptovue": 20,
+        "marbles/cookie-consent": 20,
         "ceiba-web-development/statamiccampaign": 20
     },
     "prefer-stable": true,

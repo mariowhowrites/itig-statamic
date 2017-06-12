@@ -21,3 +21,9 @@ fields:
     instructions: The intro text to display below the home page hero section.
     rows: 3
     localizable: yes
+  below_fold_logo:
+    type: assets
+    display: Below Fold Logo
+    container: s3-assets
+    folder: page-images
+    instructions: logo to display above Introductory Text on homepage

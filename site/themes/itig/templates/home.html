@@ -1,6 +1,26 @@
 
 <!-- Homepage hero section. Consists of nav-picture Vue element (main) and topical sidebar (aside) -->
-<section class="fullwidth-hero hero is-medium" style="background: #434167">
+<section class="fullwidth-hero wtxt hero is-medium" style="background: #434167">
+    <div class="hero-head">
+        <header class="nav">
+            <div class="container">
+                <div class="nav-left">
+                    {{ nav }}
+                    <a href="{{ url }}" class="nav-item tk-jaf-facitweb wtxt">
+                        {{ title|lower }}
+                    </a>
+                    {{ /nav }}
+                </div>
+                <div class="nav-center nav-menu">
+                </div>
+                <div class="nav-right nav-menu">
+                    <a href="http://github.com" class="nav-item icon">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+    </div>
     <div class="hero-body">
         <div class="container has-text-centered">
             <div class="tk-base-mono-narrow" style="font-weight: 700; font-style: italic;">
@@ -9,7 +29,7 @@
             <div class="tk-jaf-facitweb" style="margin-top: 3rem; font-size: 20px;">
                 <p>Just. Equitable. Fiscally sound.</p>
                 <p>Immigration reform done better.</p>
-                <button class="button is-danger tk-jaf-facitweb" style="margin-top: 1.5rem;">VIEW THE PLAN</button>
+                <a href="action" tabindex="0" class="button is-danger tk-jaf-facitweb" style="margin-top: 1.5rem;">VIEW THE PLAN</a>
             </div>
         </div>
     </div>
@@ -17,13 +37,46 @@
 <nav class="nav hero-nav">
     <div class="container">
         <div class="nav-center">
-            {{ nav from="action" max_depth="2" }}
+            {{ nav from="action" max_depth="1" }}
             <a href="{{ url }}" class="nav-item hero-nav-item tk-jaf-facitweb">{{ title | upper }}</a>
             {{ /nav }}
         </div>
     </div>
 </nav>
 <!-- Content section. Cards below homepage hero section, with images and links to relevant content. -->
+{{ partial:pages_cards limit="4" }}
 
-{{ partial:pages_cards }}
 
+<section class="below-fold section wtxt">
+    <div class="below-fold-wrap container">
+        <div class="column is-half is-offset-one-quarter">
+            <div class="columns is-multiline">
+                <div class="column is-4 is-offset-4">
+                    <figure class="image is-128x128 below-fold-image">
+                        <img src="{{ homepage_global:below_fold_logo | join }}" alt="">
+                    </figure>
+                </div>
+                <div class="column is-8 is-offset-2 has-text-centered">
+                    <p>{{ homepage_global:below_fold_text|strip_tags:script }}</p>
+                </div>
+                <div class="column is-full">
+                        {{ form:create in="ac-hero"}}
+                        <div class="level">
+                            {{ fields }}
+                                <div class="level-item is-one-third home-form" style="margin: 1%;">
+                                    <label for="{{ name }}">{{ display }}</label>
+                                    <input type="text" name= "{{ name }}" id="{{ name }}" value="{{ old }}" />
+                                </div>
+                            {{ /fields }}
+                        </div>
+                        <div class="submit has-text-centered">
+                            <button class="button is-primary">Submit</button>
+                        </div>
+                        {{ /form:create }}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

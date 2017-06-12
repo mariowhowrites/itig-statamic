@@ -1,0 +1,3 @@
+[submodule "site/addons/statamic-cookie-consent"]
+	path = site/addons/statamic-cookie-consent
+	url = https://github.com/Marbles/statamic-cookie-consent.git

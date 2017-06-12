@@ -3911,5 +3911,41 @@
         "transport-options": {
             "symlink": false
         }
+    },
+    {
+        "name": "ceiba-web-development/phptovue",
+        "version": "dev-develop",
+        "version_normalized": "dev-develop",
+        "dist": {
+            "type": "path",
+            "url": "../site/addons/PHPtoVue",
+            "reference": "328adbd2f5bb976bf9e7d16632afa1f9d031447b",
+            "shasum": null
+        },
+        "type": "library",
+        "installation-source": "dist",
+        "transport-options": {
+            "symlink": false
+        }
+    },
+    {
+        "name": "marbles/cookie-consent",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "dist": {
+            "type": "path",
+            "url": "../site/addons/statamic-cookie-consent",
+            "reference": "1d3df31ebd560b5617378c4bf4799b45c047e421",
+            "shasum": null
+        },
+        "type": "library",
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "description": "Make your website comply with the crazy EU cookie law",
+        "transport-options": {
+            "symlink": false
+        }
     }
 ]

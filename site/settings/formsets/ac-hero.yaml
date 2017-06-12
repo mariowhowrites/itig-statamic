@@ -2,10 +2,10 @@ title: ActiveCampaign Hero
 fields:
   email:
     display: Email
-    validate: email | required
+    validate: email|required
   first_name:
     display: First Name
-    validate: string | required
+    validate: string|required
   last_name:
     display: Last Name
-    validate: string | required
+    validate: string|required
