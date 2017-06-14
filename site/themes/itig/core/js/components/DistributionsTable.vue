@@ -48,7 +48,7 @@
         },
         methods: {
             getStates() {
-                axios.get('http://itig.app/!/PHPtoVue/collection')
+                axios.get( url + '!/PHPtoVue/collection')
                     .then(
                         res => {
                             for (let state of _.values(res.data) ) {
@@ -56,7 +56,6 @@
                             }
 
                             this.sortBy('euip');
-
                         }
                     );
 
@@ -94,6 +93,7 @@
             }
         },
         created() {
+            console.log(url);
             this.getStates();
         }
     }

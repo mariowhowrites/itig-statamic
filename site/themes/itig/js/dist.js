@@ -142,7 +142,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         getStates: function getStates() {
             var _this = this;
 
-            axios.get('http://itig.app/!/PHPtoVue/collection').then(function (res) {
+            axios.get(url + '!/PHPtoVue/collection').then(function (res) {
                 var _iteratorNormalCompletion = true;
                 var _didIteratorError = false;
                 var _iteratorError = undefined;
@@ -201,6 +201,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         }
     },
     created: function created() {
+        console.log(url);
         this.getStates();
     }
 });

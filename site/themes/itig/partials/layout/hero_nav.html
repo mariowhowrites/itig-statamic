@@ -1,0 +1,9 @@
+<nav class="nav hero-nav">
+    <div class="container">
+        <div class="nav-center">
+            {{ nav from="{from or '/' | dump}" max_depth="1" }}
+            <a href="{{ url }}" class="nav-item hero-nav-item tk-jaf-facitweb">{{ title | upper }}</a>
+            {{ /nav }}
+        </div>
+    </div>
+</nav>

@@ -37,15 +37,8 @@
         </div>
     </div>
 </section>
-<nav class="nav hero-nav">
-    <div class="container">
-        <div class="nav-center">
-            {{ nav from="action" max_depth="1" }}
-            <a href="{{ url }}" class="nav-item hero-nav-item tk-jaf-facitweb">{{ title | upper }}</a>
-            {{ /nav }}
-        </div>
-    </div>
-</nav>
+
+{{ partial:layout/hero_nav }}
 <!-- Content section. Cards below homepage hero section, with images and links to relevant content. -->
 {{ partial:pages_cards limit="6" }}
 
