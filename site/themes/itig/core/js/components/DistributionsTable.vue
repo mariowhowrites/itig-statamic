@@ -35,7 +35,8 @@
                 search: '',
                 sortKey: 'euip',
                 reverse: false,
-                columns: ['State', 'EUIP', 'Percentage', 'IR Allocation', 'Infrastructure Allocation', 'Total State Allocation']
+                columns: ['State', 'EUIP', 'Percentage', 'IR Allocation', 'Infrastructure Allocation', 'Total State Allocation'],
+                url: location.protocol + '//' + location.host,
             }
         },
         computed: {
@@ -48,7 +49,7 @@
         },
         methods: {
             getStates() {
-                axios.get( url + '!/PHPtoVue/collection')
+                axios.get( this.url + '/!/PHPtoVue/collection')
                     .then(
                         res => {
                             for (let state of _.values(res.data) ) {
@@ -93,7 +94,7 @@
             }
         },
         created() {
-            console.log(url);
+            console.log(this.url);
             this.getStates();
         }
     }

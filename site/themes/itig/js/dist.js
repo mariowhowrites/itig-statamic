@@ -128,7 +128,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             search: '',
             sortKey: 'euip',
             reverse: false,
-            columns: ['State', 'EUIP', 'Percentage', 'IR Allocation', 'Infrastructure Allocation', 'Total State Allocation']
+            columns: ['State', 'EUIP', 'Percentage', 'IR Allocation', 'Infrastructure Allocation', 'Total State Allocation'],
+            url: location.protocol + '//' + location.host
         };
     },
 
@@ -142,7 +143,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         getStates: function getStates() {
             var _this = this;
 
-            axios.get(url + '!/PHPtoVue/collection').then(function (res) {
+            axios.get(this.url + '/!/PHPtoVue/collection').then(function (res) {
                 var _iteratorNormalCompletion = true;
                 var _didIteratorError = false;
                 var _iteratorError = undefined;
@@ -201,7 +202,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         }
     },
     created: function created() {
-        console.log(url);
+        console.log(this.url);
         this.getStates();
     }
 });
