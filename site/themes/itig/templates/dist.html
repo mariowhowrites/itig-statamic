@@ -7,6 +7,6 @@
 <div id="app"></div>
 
 {{ section:custom_footer_scripts }}
-    <script>const url = '{{ path src="/" }}';</script>
+    <script>var url = '{{ path src="/" }}';</script>
     {{ theme:js src="dist" tag="true" cache_bust="true" }}
 {{ /section:custom_footer_scripts }}
