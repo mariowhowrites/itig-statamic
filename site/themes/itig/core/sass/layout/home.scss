@@ -4,24 +4,33 @@
   .hero-head {
     .nav {
       box-shadow: none;
+      .nav-left {
+        overflow: visible;
+      }
       .nav-right {
         align-items: center;
       }
     }
   }
-  a {
+  .hero-body {
+    h1 {
+      font-weight: bold;
+    }
+  }
+  a, i {
     color: white;
+    margin: 0 .5rem;
     &:hover {
       color: $red;
     }
   }
 }
 
-/* Below-Fold Text Section
+/* Below-Fold Text Section  TODO: Refactor to "Email Signup"
  */
 
 .below-fold {
-  background: $red;
+  background: $primary;
   .below-fold-image {
     margin: 0 auto;
   }
@@ -32,6 +41,10 @@
   }
   label {
     color: white;
+  }
+  .email-signup {
+    max-width: 40%;
+    margin: 0 auto;
   }
 }
 /* Navigation */

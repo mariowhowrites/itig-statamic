@@ -1,5 +1,5 @@
 ---
-featured_image: page-images::background.jpg
+featured_image: https://s3-us-west-1.amazonaws.com/itig-s3/page-images/statue_of_liberty_colorized.png
 title: Background
 id: 288383ff-4425-4cec-9762-b2de283dc454
 template: top-page

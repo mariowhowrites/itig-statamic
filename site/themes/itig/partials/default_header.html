@@ -3,9 +3,9 @@
     <div class="level">
         <div class="level-left">
             <div class="site-logo level-item">
-                {{ assets path="assets" folder="site_img" }}
+                {{ assets container="s3-assets" folder="site-img" }}
                     <a href="/" rel="nofollow">
-                        <img src="{{ url }}" alt="{{ alt }}"/>
+                        <figure class="image is-64x64"><img src="{{ url }}" alt="{{ alt }}"/></figure>
                     </a>
                 {{ /assets }}
             </div>
