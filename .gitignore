@@ -1,3 +1,4 @@
 .idea
 site/themes/itig/css/itig/css/*
 site/themes/itig/css/itig/js/*
+site/storage/*

@@ -5,14 +5,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-$blue: #3C3B6E;
-$red: #B22234;
+/* last blue: #403bce */
+$blue: #403bce;
+$red: #dd0300;
 
 $primary: $blue;
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: base-mono-narrow;
+  font-family: "halyard-display";
 }
 
 @import "../../node_modules/bulma/bulma";

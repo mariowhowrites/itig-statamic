@@ -1,0 +1,31 @@
+<section class="below-fold section wtxt">
+    <div class="below-fold-wrap container">
+        <div class="column is-half is-offset-one-quarter">
+            <div class="columns is-multiline">
+                <div class="column is-4 is-offset-4">
+                    <figure class="image is-128x128 below-fold-image">
+                        <img src="{{ homepage_global:below_fold_logo | join }}" alt="">
+                    </figure>
+                </div>
+                <div class="column is-8 is-offset-2 has-text-centered">
+                    <p>{{ homepage_global:below_fold_text|strip_tags:script }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="column is-full">
+            {{ form:create in="ac-hero"}}
+            <div class="level">
+                {{ fields }}
+                <div class="level-item is-one-third home-form" style="margin: 1%;">
+                    <label for="{{ name }}" class="label wtxt">{{ display }}</label>
+                    <input type="text" name= "{{ name }}" id="{{ name }}" value="{{ old }}" class="input"/>
+                </div>
+                {{ /fields }}
+            </div>
+            <div class="submit has-text-centered">
+                <button class="button is-primary">Submit</button>
+            </div>
+            {{ /form:create }}
+        </div>
+    </div>
+</section>
