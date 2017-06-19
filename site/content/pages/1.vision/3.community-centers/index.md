@@ -1,4 +1,5 @@
 ---
+featured_image: https://s3-us-west-1.amazonaws.com/itig-s3/page-images/flag_draped_colorized.png
 title: Community Centers
 id: 667bd2b7-9538-41cf-8710-0f79950a0973
 ---

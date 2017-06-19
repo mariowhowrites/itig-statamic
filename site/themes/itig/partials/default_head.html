@@ -9,9 +9,11 @@
     <meta name="robots" content="noindex">
     <meta name="description" content="{{ meta_description }}">
     <title>{{ title or site_title }}</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.0/chartist.min.js"></script>
     <script src="https://use.typekit.net/mno4for.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ theme:css }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.0/chartist.min.css">
     {{ yield:custom_head_scripts }}
 </head>

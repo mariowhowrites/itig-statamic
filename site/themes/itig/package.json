@@ -12,6 +12,7 @@
   "devDependencies": {
     "breakpoint": "^0.1.6",
     "bulma": "^0.4.1",
+    "chartjs": "^0.3.24",
     "laravel-mix": "^0.11.4",
     "path": "^0.12.7",
     "vue": "^2.3.3"

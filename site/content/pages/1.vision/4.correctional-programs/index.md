@@ -1,4 +1,5 @@
 ---
+featured_image: https://s3-us-west-1.amazonaws.com/itig-s3/page-images/flag_fence_colorized.png
 title: Correctional Programs
 id: 7f6c97d6-9475-425d-a1ff-1a50464f6ddf
 ---

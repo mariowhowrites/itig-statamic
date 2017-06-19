@@ -1,4 +1,5 @@
 ---
+featured_image: https://s3-us-west-1.amazonaws.com/itig-s3/page-images/rushmore_colorized.png
 title: Government
 id: 44cbcbb3-e0bd-4483-8815-66a4b2489627
 ---

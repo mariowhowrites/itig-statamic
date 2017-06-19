@@ -1,5 +1,5 @@
 ---
-featured_image: page-images::health-care-100.jpg
+featured_image: https://s3-us-west-1.amazonaws.com/itig-s3/page-images/pills_colorized.png
 title: Healthcare
 id: a423a1d6-ee71-4f54-8df7-08b1249baa27
 ---
