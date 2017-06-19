@@ -1,5 +1,5 @@
 ---
-featured_image: page-images::resources.jpg
+featured_image: https://s3-us-west-1.amazonaws.com/itig-s3/page-images/america_love_colorized.png
 title: Resources
 template: top-page
 id: dc5375df-963a-4f73-96e5-0c9c3abc5125

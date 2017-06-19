@@ -315,7 +315,6 @@ class CollectionTags extends Tags
 
                 $data = array_merge($data, $this->getCollectionMetaData());
 
-
                 return $this->parse($data);
 
             } else {
@@ -600,6 +599,10 @@ class CollectionTags extends Tags
             $collection = $this->get(['collection', 'in']);
 
             $this->collection = Entry::whereCollection($collection);
+        }
+
+        if ($this->getBool('supplement_taxonomies', true)) {
+            $this->collection = $this->collection->supplementTaxonomies();
         }
 
         $this->filter(false);

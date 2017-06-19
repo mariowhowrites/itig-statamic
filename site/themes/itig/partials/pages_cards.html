@@ -2,19 +2,21 @@
     <div class="container content">
         <div class="columns is-multiline">
             {{ pages :limit=limit depth="1" }}
-            <div class="column is-half">
-                <div class="card">
-                    <div class="card-image">
-                            <figure class="image is-3by2">
-                                <img src="{{ glide:featured_image }}" alt="featured_image"/>
-                            </figure>
-                    </div>
-                    <div class="card-content has-text-centered tk-halyard-text">
-                        <a href="{{ url }}"><h2>{{ title|upper }}</h2></a>
-                        <p style="font-weight: 300;">{{ meta_description or content|strip_tags|safe_truncate:159: ... }}</p>
+                <div class="column is-half">
+                    <div class="card">
+                        <div class="card-image">
+                                <figure class="image image-container is-3by2">
+                                    <div class="page-title-wrapper">
+                                        <a href="{{ url }}"><h2 class="page-title">{{ title|upper }}</h2></a>
+                                    </div>
+                                    <img class= "featured-image" src="{{ glide:featured_image }}" alt="featured_image"/>
+                                </figure>
+                        </div>
+                        <div class="card-content has-text-centered tk-halyard-text">
+                            <p style="font-weight: 300;">{{ meta_description or content|strip_tags|safe_truncate:159: ... }}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             {{ /pages }}
         </div>
     </div>

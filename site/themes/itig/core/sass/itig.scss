@@ -1,22 +1,40 @@
 @import "util/semantic";
 @import "../../node_modules/bulma/sass/utilities/initial-variables";
 
+/* Globals */
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* last blue: #403bce */
-$blue: #413db5;
-$red: #dd0300;
-
-$primary: $blue;
-$secondary: red;
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "halyard-display";
 }
 
+/* Bulma overrides */
+
+$blue: #382298;
+$red: #ff0000;
+
+//$blue: #283593;
+//$red: #C62828;
+
+$primary: $blue;
+$secondary: red;
+
+/* mq-overrides */
+
+$mq-responsive: true;
+$mq-breakpoints: (
+  mobile: 320px,
+  tablet: 769px,
+  desktop: 1383px,
+);
+
+
 @import "../../node_modules/bulma/bulma";
+@import "../../node_modules/sass-mq/_mq";
+
 @import "layout/home";
 @import "layout/header";
 @import "partials/pages-cards";

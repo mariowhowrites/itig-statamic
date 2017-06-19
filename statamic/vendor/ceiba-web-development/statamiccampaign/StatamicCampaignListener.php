@@ -16,8 +16,18 @@ class StatamicCampaignListener extends Listener
     public $events = ['Form.submission.created' =>  'sendToActiveCampaign'];
 
     public function sendToActiveCampaign(Submission $submission) {
+        $ac = new \ActiveCampaign( 'https://itig.api-us1.com', 'a16cd0653ce4eb18e6614a9b8bf61b4b4513aa76f172ff49311896cfb7c32c7ab749a280');
 
-        $request = new GuzzleHttp\Psr7\Request('POST', 'https://itig.api-us1.com/api/3/contacts');
+        if ( 'ac-hero' === $submission->formset()->name() ) {
+            $body = collect( array_keys( $submission->formset()->fields() ) )
+                    ->reduce( function($array, $field) use ($submission) {
+                        $array[$field] = $submission->get($field);
+                        return $array;
+                    }, []);
 
+            $body['list_id'] = 'p[3]';
+
+            $response = $ac->api('contact/sync', $body);
+        }
     }
 }

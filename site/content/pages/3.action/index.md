@@ -1,5 +1,5 @@
 ---
-featured_image: page-images::action.jpg
+featured_image: https://s3-us-west-1.amazonaws.com/itig-s3/page-images/skyline_colorized.png
 title: Action
 template: top-page
 id: fff03e6e-c550-42bb-b4c8-6530e17ca4f8
