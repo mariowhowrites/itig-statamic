@@ -1,6 +1,6 @@
 <template>
     <section class="distributions-table section">
-
+        <label class="label">Select Your State...</label>
         <input class="state-search input" type="text" v-model="search">
         <div class="container">
             <table class="table is-bordered is-striped">
