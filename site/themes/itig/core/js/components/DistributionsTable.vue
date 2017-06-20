@@ -1,7 +1,7 @@
 <template>
     <section class="distributions-table section">
 
-        <input type="text" v-model="search">
+        <input class="state-search input" type="text" v-model="search">
         <div class="container">
             <table class="table is-bordered is-striped">
                 <thead>
