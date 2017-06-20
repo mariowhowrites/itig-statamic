@@ -31,6 +31,17 @@ $mq-breakpoints: (
   desktop: 1383px,
 );
 
+/* Vision CSS Markup */
+.page-content {
+  font-size: 1.4rem;
+  max-width: 60% !important;
+  margin: 0 auto;
+}
+
+label.ct-label {
+  font-family: "halyard-display";
+  text-transform: uppercase;
+}
 
 @import "../../node_modules/bulma/bulma";
 @import "../../node_modules/sass-mq/_mq";
