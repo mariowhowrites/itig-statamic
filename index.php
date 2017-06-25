@@ -16,7 +16,7 @@ $statamic = './statamic';
 |--------------------------------------------------------------------------
 | Site Root
 |--------------------------------------------------------------------------
-|
+|<
 | The site root is where your website is being served from. Most of the
 | time it'll likely be in the webroot, so you can leave it as "/". But
 | sometimes you need to move it. Maybe you're just using Statamic for
